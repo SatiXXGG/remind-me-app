@@ -3,43 +3,29 @@
 @tailwind utilities;
 
 :root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  background: black;
-  color: white;
 }
 
-.status {
-  width: 2.5rem;
-  height: 0.75rem;
-  position: absolute;
-  right: .5rem;
-  top: .5rem;
-  border-radius: 1rem;
-    background-color: rgb(239 68 68);
+.white-mode {
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
 }
 
-.status.green {
-  width: 2.5rem;
-    height: 0.75rem;
-  position: absolute;
-  right: .5rem;
-  top: .5rem;
-  border-radius: 1rem;
-  background-color: rgb(34 197 94);
-}
-.delete {
-    position: absolute;
-    left: 1rem;
-    bottom: .5rem;
-    opacity: 100%;
-    color: rgb(239 68 68);
-    font-weight: bolder;
+.modern-overflow::-webkit-scrollbar-track {
+  border: 1px solid #000;
+  padding: 2px 0;
+  background-color: #404040;
 }
 
-.delete.transparent {
-  position: absolute;
-  left: .5rem;
-  bottom: .5rem;
-  opacity: 0%;
+.modern-overflow::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modern-overflow::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #737272;
+  border: 1px solid #000;
 }
